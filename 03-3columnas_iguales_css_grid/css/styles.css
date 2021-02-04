@@ -39,11 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
-
-@media (min-width: 768px) { /* queremos que a partir de como minimo 768px se comporte de otra forma */
-    .dos-columnas {
+@media (min-width: 768px) {
+    
+    .tres-columnas {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
 }
