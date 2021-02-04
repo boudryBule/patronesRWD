@@ -1,1 +1,2 @@
 # patrones de diseño
+# patronesRWD
