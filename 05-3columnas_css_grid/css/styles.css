@@ -49,3 +49,31 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .contenedor-grid {
+        display: grid;
+     
+        /* 
+            si la cosa se complica mucho usamos area.
+            grid-template-areas:"izquierda contenido derecha"
+            mantienes que cada uno con su fracción o su porcentaje
+
+        */
+
+           /* también puede ponerse 1fr 3fr 1fr */
+        grid-template-columns: 20% 60% 20%;
+        grid-auto-flow: column; /* así hacemos que el contenido se acomode en columnas */
+        column-gap: 2rem;
+    }
+
+    .contenido-principal {
+        grid-column: 2 / 3;
+        /* grid-area: contenido así indicarías cada zona como se comporta */
+    }
+
+    .sidebar-1 {
+        grid-column: 1 / 2;
+    }
+    
+}
