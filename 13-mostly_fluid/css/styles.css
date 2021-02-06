@@ -37,3 +37,25 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%; /* lo debemos poner siempre con porcentajes, nunca un valor fijo del estilo 1200px porque entonces con una pantalla más pequeña tendríamos que ir haciendo scroll debido a que no se adaptaría de forma automática */
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor{
+        width: 60%;
+    }
+}
+
+img {
+    max-width: 100%; /* lo suyo es poner max-width para no forzar a que sea el 100% cuando la imagen es muy pequeña */
+}
